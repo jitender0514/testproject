@@ -85,7 +85,6 @@ class DeleteBusiness(graphene.Mutation):
         id = from_global_id(id)[1]
         business = Businesses.objects.get(id=id)
         business.delete()
-        print(business)
         return DeleteBusiness(business=business)
 
 

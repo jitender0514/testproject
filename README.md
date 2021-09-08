@@ -6,12 +6,23 @@ Python=3.9
 Django=3.x
 
 ## HOW TO SETUP:
+
+### SETUP without Docker
+
 - install requirements
 `pip install -r requirements.txt`
 - Run migrations `python manage.py migrate`
 - Create superuser `python manage.py createsuperuser`
 - Run the project  `python manage.py runserver`
 
+
+### SETUP with Docker:
+Run following commands:
+- `docker-compose build` generate build
+- `docker-compose up` up the build
+
+Down the build
+- `docker-compose down` down
 
 
 
